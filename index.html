@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://opentdb.com/api.php?amount=10&type=booleanJ"></script>
+    </head>
+    <body id="body" class="pt-5">
+        <div class="container pt-5">
+            <h1 onload="setQuestion()" id="output" class="text-center"></h1>
+            <h2 id="resultOut" class="text-center"></h2>
+        <form onload="setQuestion()" id="quiz" class="text-center">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" name="trueFalseRadio" id="trueRadio" value="true">
+                <label class="custom-control-label" for="trueRadio">True</label>
+            </div> 
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" name="trueFalseRadio" id="falseRadio" value="false">
+                <label class="custom-control-label" for="falseRadio">False</label>
+            </div>
+            <button id="guessButton" type="button" >Submit</button>
+            <button id="nextButton" type="button" >Next Question</button>
+        </form>
+        </div>
+        <script type="text/javascript" src="javascript.js"></script>
+    </body>
+</html>
